@@ -56,6 +56,11 @@ public class WebController {
         return "user/facebookShare";
     }
 
+    @RequestMapping("/facebookLogin")
+    public String facebookLogin() {
+        return "user/facebookLogin";
+    }
+
     @RequestMapping("/facebookShareOpenGraph")
     public String facebookShareOpenGraph() {
         return "user/facebookShareOpenGraph";
