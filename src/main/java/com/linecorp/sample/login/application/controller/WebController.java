@@ -51,13 +51,14 @@ public class WebController {
         return "user/login";
     }
 
-    /**
-     * <p>LINE Login Button Page
-     * <p>Login Type is to log in on any desktop or mobile website
-     */
-    @RequestMapping("/facebook")
-    public String facebook() {
-        return "user/facebook";
+    @RequestMapping("/facebookShare")
+    public String facebookShare() {
+        return "user/facebookShare";
+    }
+
+    @RequestMapping("/facebookShareOpenGraph")
+    public String facebookShareOpenGraph() {
+        return "user/facebookShareOpenGraph";
     }
 
     /**

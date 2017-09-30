@@ -11,11 +11,14 @@
       version          : 'v2.10'
     });
     FB.AppEvents.logPageView();
-    FB.ui(
-	 {
-	  method: 'share',
-	  href: 'https://developers.facebook.com/docs/'
-	}, function(response){});
+    FB.ui({
+            method: 'share_open_graph',
+            action_type: 'og.likes',
+            action_properties: JSON.stringify({
+            object:'https://developers.facebook.com/docs/',
+      }, function(response){
+	     console.log(response);
+	});
   };
 
   (function(d, s, id){
