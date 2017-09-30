@@ -52,6 +52,15 @@ public class WebController {
     }
 
     /**
+     * <p>LINE Login Button Page
+     * <p>Login Type is to log in on any desktop or mobile website
+     */
+    @RequestMapping("/facebook")
+    public String facebook() {
+        return "user/facebook";
+    }
+
+    /**
      * <p>Redirect to LINE Login Page</p>
      */
     @RequestMapping(value = "/gotoauthpage")
